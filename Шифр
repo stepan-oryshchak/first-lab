@@ -1,0 +1,13 @@
+al = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюяабвгґдеєжзиіїйклмнопрстуфхцчшщьюя"
+encrypt = input("Напишіть слово:")
+key = int(input("Введіть ключ(число від 1-32): " ))
+encrypt = encrypt.lower()
+encrypted = ""
+for letter in encrypt:
+    position = al.find(letter)
+    i = position + key
+    if letter in al :
+        encrypted = encrypted + al[i]
+    else:
+        encrypted = encrypted + letter
+print("Ваш результат: ", encrypted)
