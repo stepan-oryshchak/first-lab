@@ -1,0 +1,26 @@
+then = 'y'
+while then == 'y':
+    num_1 = float(input("Enter first number:"))
+    oper = input("Choise (+,-,/,*,**)")
+    num_2 = float(input("Enter second number:"))
+
+    res = None
+
+    if oper == '+':
+        res = num_1 + num_2
+    elif oper == '-':
+       res = num_1 - num_2
+    elif oper == '/':
+        if num_2 == 0:
+            print("не діли на ноль")
+        else:
+            res = num_1 / num_2
+    elif oper == '*':
+        res = num_1 * num_2
+    elif oper == '**':
+        res = num_1 ** num_2
+    else:
+        print("Error")
+    if res is not None:
+        print("Rusult is", res)
+    then = input("Enter 'y' to continue and any key to end")
