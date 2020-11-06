@@ -1,0 +1,5 @@
+input = input("Введіть слово: ")
+words = input.split()
+words.reverse()
+output = ' '.join(words)
+print("Новий текст: ", output[::-1])
